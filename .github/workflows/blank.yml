@@ -25,9 +25,3 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
-      - name: JSDoc Action
-        uses: andstor/jsdoc-action@v1.2.1
-        with:
-          source_dir: /javascript
-          recurse: false
-          output_dir: /docs
