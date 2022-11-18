@@ -25,3 +25,8 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
+      - name: Install standard
+        run: |
+          npm install standard --global
+      - name: Run standard
+        run: standard "./javascript/*.js"
