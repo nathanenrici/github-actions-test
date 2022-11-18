@@ -25,8 +25,8 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
-      - name: Install standard
+      - name: Install eslint
         run: |
-          npm install standard --global
-      - name: Run standard
-        run: standard --fix "./javascript/*.js"
+          npm init @eslint/config
+      - name: Run eslint
+        run: npx eslint ./javascript/*.js
