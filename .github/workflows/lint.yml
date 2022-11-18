@@ -30,4 +30,4 @@ jobs:
           npm install standard --global
       - name: Run standard
         run: standard "./javascript/*.js"
-          standard --fix
+          standard --fix "./javascript/*.js"
