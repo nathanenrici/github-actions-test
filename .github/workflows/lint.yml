@@ -31,4 +31,4 @@ jobs:
         run: |
           npm install semistandard
       - name: Run semistandard
-        run: npx semistandard --fix ./javascript/*.js
+        run: npx semistandard ./javascript/*.js
