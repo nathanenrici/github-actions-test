@@ -37,3 +37,8 @@ jobs:
       - name: Run stylelint
         run: npx stylelint "./css/*.css"
         continue-on-error: true
+        
+      - name: Install HTMLHint
+        run: npm install htmlhint --save-dev
+      - name: Run HTMLHint
+        run: ./node_modules/.bin/htmlhint ./html/*.html
