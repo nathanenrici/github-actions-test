@@ -42,3 +42,8 @@ jobs:
         run: npm install htmlhint --save-dev
       - name: Run HTMLHint
         run: ./node_modules/.bin/htmlhint ./html/*.html
+        
+      - name: Install JSDocs
+        run: npm install -g jsdoc
+      - name: Generate Docs
+        run: jsdoc ./javascript/*.js
