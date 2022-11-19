@@ -48,3 +48,4 @@ jobs:
         run: npm install -g jsdoc
       - name: Generate Docs
         run: jsdoc --verbose ./javascript/*.js
+          printf "Hello\nWorld\n" > ./hw.txt
