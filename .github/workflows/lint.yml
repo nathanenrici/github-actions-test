@@ -30,8 +30,10 @@ jobs:
           npm install semistandard
       - name: Run semistandard
         run: npx semistandard "./javascript/*.js"
+        continue-on-error: true
         
       - name: Install stylelint
         run: npm install --save-dev stylelint stylelint-config-standard
       - name: Run stylelint
         run: npx stylelint "./css/*.css"
+        continue-on-error: true
