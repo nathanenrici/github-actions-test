@@ -51,4 +51,5 @@ jobs:
           ls
           jsdoc --verbose ./javascript/*.js
           ls
+          ls out
         
