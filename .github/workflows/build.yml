@@ -32,7 +32,7 @@ jobs:
         run: |
           npm install semistandard
       - name: Run semistandard
-        run: npx semistandard "./javascript/*.js"
+        run: npx semistandard --fix "./javascript/*.js"
         continue-on-error: true
         
       - name: Install stylelint
