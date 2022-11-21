@@ -51,17 +51,14 @@ jobs:
         run: npm install -g jsdoc
       - name: Generate Docs
         run: |
-          ls
           jsdoc --verbose ./javascript/*.js
-          ls
-          ls out
         
       - name: Commit files
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add -A
-          git commit -a -m "Add changes"
+          git commit -a -m "Linting and doc generation"
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
