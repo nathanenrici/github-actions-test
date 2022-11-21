@@ -47,7 +47,8 @@ jobs:
       - name: Install JSDocs
         run: npm install -g jsdoc
       - name: Generate Docs
-        run: ls
+        run: |
+          ls
           jsdoc --verbose ./javascript/*.js
           ls
         
