@@ -52,6 +52,7 @@ jobs:
       - name: Generate Docs
         run: |
           jsdoc --verbose ./javascript/*.js
+          mv ./out/* ./docs
         
       - name: Commit files
         run: |
