@@ -61,6 +61,7 @@ jobs:
           rm package.json
           rm package-lock.json
           rm -r out
+          rm -r node_modules
           git add -A
           git commit -a -m "Linting and doc generation"
       - name: Push changes
