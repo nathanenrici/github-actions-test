@@ -1,4 +1,4 @@
-/*FUNCTION*/
-function yeah(){
-    
+/* FUNCTION */
+function yeah () {
+
 }
